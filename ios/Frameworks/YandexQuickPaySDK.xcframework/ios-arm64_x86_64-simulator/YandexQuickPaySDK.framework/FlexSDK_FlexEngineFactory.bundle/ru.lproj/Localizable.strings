@@ -1,0 +1,6 @@
+"errorView.networkError.title" = "Что-то пошло не так";
+"errorView.networkError.details" = "Проверьте интернет и попробуйте еще раз";
+"errorView.networkError.firstButtonTitle" = "Повторить";
+"errorView.somethingWrong.title" = "Что-то пошло не так";
+"errorView.somethingWrong.details" = "Возможно, вы перешли по некорректной\nссылке.";
+"errorView.somethingWrong.firstButtonTitle" = "Обновить";

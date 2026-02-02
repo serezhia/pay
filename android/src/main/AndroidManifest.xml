@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yandex.pay.quickpay.flutter">
+
+    <application>
+        <meta-data
+            android:name="com.yandex.auth.OAUTH_HOST"
+            android:value="oauth.yandex.ru" />
+
+        <meta-data
+            android:name="com.yandex.pay.quickpay.MERCHANT_ID"
+            android:value="${QUICKPAY_MERCHANT_ID}" />
+
+        <meta-data
+            android:name="com.yandex.pay.quickpay.ENVIRONMENT"
+            android:value="${QUICKPAY_ENVIRONMENT}" />
+    </application>
+</manifest>

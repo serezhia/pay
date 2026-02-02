@@ -1,0 +1,23 @@
+name: yandex_quick_pay
+description: Yandex Quick Pay SDK for Flutter.
+version: 1.0.0
+homepage: https://pay.yandex.ru
+documentation: https://pay.yandex.ru/docs/ru/custom/front-index
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.yandex.pay.quickpay.flutter
+        pluginClass: YandexQuickPayPlugin
+      ios:
+        pluginClass: YandexQuickPayPlugin
+
