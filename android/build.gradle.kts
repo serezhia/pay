@@ -36,7 +36,7 @@ plugins {
 
 android {
     lint {
-       disable "NullSafeMutableLiveData"
+       disable += "NullSafeMutableLiveData"
     }
     namespace = "com.yandex.pay.quickpay.flutter"
     compileSdk = 35
