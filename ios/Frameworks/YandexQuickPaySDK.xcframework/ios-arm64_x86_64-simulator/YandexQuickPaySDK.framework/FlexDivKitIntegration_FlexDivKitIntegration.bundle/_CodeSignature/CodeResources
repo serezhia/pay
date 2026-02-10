@@ -27,6 +27,10 @@
 	<dict>
 		<key>en.lproj/Localizable.strings</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Hn3RU0n07y8rKU3IlF4HCHD8Bdc=
+			</data>
 			<key>hash2</key>
 			<data>
 			eJ06lx9i4k00AOavXLOq2YyDn2JPJBvtVY5WuBgeC3c=
@@ -36,6 +40,10 @@
 		</dict>
 		<key>ru.lproj/Localizable.strings</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			8Gqyni/AEj+lsk4WV5evfCq5MO4=
+			</data>
 			<key>hash2</key>
 			<data>
 			zdTXqYqixCtSzhEtPfnD+fqCCPTfbelij2Ko5Yyhing=

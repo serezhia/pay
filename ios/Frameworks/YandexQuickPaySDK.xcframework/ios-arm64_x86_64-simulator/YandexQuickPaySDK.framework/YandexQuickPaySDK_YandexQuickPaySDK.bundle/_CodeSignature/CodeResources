@@ -65,6 +65,10 @@
 	<dict>
 		<key>Fonts/YSDisplay-Bold.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			F5Qt6/GFWWDTENCrVxtm00sAR7E=
+			</data>
 			<key>hash2</key>
 			<data>
 			9EsNVa8t1m4Puu8Vun6uOYLCAicN95w1SjT51U1EYU4=
@@ -72,6 +76,10 @@
 		</dict>
 		<key>Fonts/YSDisplay-Heavy.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			+nijObATOL148qZZ+nICdDr92Nk=
+			</data>
 			<key>hash2</key>
 			<data>
 			BUTzBFdGljLxCThX6Xs3/TLFCv5kAZDTf1oII8FDYPM=
@@ -79,6 +87,10 @@
 		</dict>
 		<key>Fonts/YSDisplay-Light.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			5it5lFl/JvY/0Eg5QpAz2gaadFA=
+			</data>
 			<key>hash2</key>
 			<data>
 			jOn5ceJ6f7KZO+4AdS0MmnfnpJ/muGOEPEo9kq7Cwgk=
@@ -86,6 +98,10 @@
 		</dict>
 		<key>Fonts/YSDisplay-Medium.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			YIJvqGv9Mcu7EFDyjYikk3v6Klk=
+			</data>
 			<key>hash2</key>
 			<data>
 			j3iV0CqaXRrcgfeKS45eUWDcEOtxunOMPHGY9KcnHis=
@@ -93,6 +109,10 @@
 		</dict>
 		<key>Fonts/YSDisplay-Regular.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			BaFm1xKoiX/PIwqACysotrcedUg=
+			</data>
 			<key>hash2</key>
 			<data>
 			C20WKU4+j9y+bvcxkJHLl6h+dWLh8gKwaTMSn/HNFQQ=
@@ -100,6 +120,10 @@
 		</dict>
 		<key>Fonts/YSDisplay-Thin.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			5wmYRwWd6cZ62pPJxHlqfus3Zbg=
+			</data>
 			<key>hash2</key>
 			<data>
 			nC8OALPVILAwc97xoKIEpxhbVyuuBJ6XlHv+zp/7wcU=
@@ -107,6 +131,10 @@
 		</dict>
 		<key>Fonts/YSText-Bold.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			8QuXQjTcL1DlAJzBzXVPPGNt+wM=
+			</data>
 			<key>hash2</key>
 			<data>
 			Z+9CO0B8KbNDWAV//ZIjCNyfdjgxDE6KqLKSiSWRdbI=
@@ -114,6 +142,10 @@
 		</dict>
 		<key>Fonts/YSText-BoldItalic.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			km9SV1N5+X5nGC7AALH2l9vfvJM=
+			</data>
 			<key>hash2</key>
 			<data>
 			aZLPkVVabcF0yXpHNzUQS6AriVGSNZJ3CioQaddVGdw=
@@ -121,6 +153,10 @@
 		</dict>
 		<key>Fonts/YSText-Light.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			vwvzt53g/qqignkn8A0cN45DyJw=
+			</data>
 			<key>hash2</key>
 			<data>
 			EYrpJn62pZoyPDpDBV4oaj1f14oP/PTNffj5spjmjN4=
@@ -128,6 +164,10 @@
 		</dict>
 		<key>Fonts/YSText-LightItalic.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Gqrh5VXE5kxEh0V6Lvadmf/pADU=
+			</data>
 			<key>hash2</key>
 			<data>
 			Jo1lbEsEbxGPVzc+3Pr8+ImIECWkKx5PmUGQit9Y3rc=
@@ -135,6 +175,10 @@
 		</dict>
 		<key>Fonts/YSText-Medium.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			8JmbfAuYd0cEhecznUU1BSj/QkM=
+			</data>
 			<key>hash2</key>
 			<data>
 			325D3URIaIgGj4kuK6b+aVTSEqgduhJFYEA6G2O09H4=
@@ -142,6 +186,10 @@
 		</dict>
 		<key>Fonts/YSText-MediumItalic.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			ckbOGAuYz0aYaat23p+0Tk2uxZ0=
+			</data>
 			<key>hash2</key>
 			<data>
 			Ekui4mq56IdmjF3XEYnKbk7LUgzRyypluEFoLkKF+qE=
@@ -149,6 +197,10 @@
 		</dict>
 		<key>Fonts/YSText-Regular.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			oUs3od1RanZTuNprmrSYVUVzTZM=
+			</data>
 			<key>hash2</key>
 			<data>
 			fIuuUYjLd8TzER8PUWiB6KqDyPtaKEw78jFWvAMaCco=
@@ -156,6 +208,10 @@
 		</dict>
 		<key>Fonts/YSText-RegularItalic.ttf</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			Mrv0hJ0Cxm2tyFPb7rhxNX3u3Xk=
+			</data>
 			<key>hash2</key>
 			<data>
 			dzSttlqmH8tYExtGFEiLhNQFYqkf1e9nVoNLEYQttIM=

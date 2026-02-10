@@ -177,7 +177,6 @@ public class YandexQuickPayPlugin: NSObject, FlutterPlugin, FlutterStreamHandler
       self?.quickPayHandler = FintechQuickPayHandler(
         config: config,
         stateListener: listener,
-        appMetricaAdapter: QuickPayAppMetricaAdapter(),
         presenterViewController: presenterViewController
       )
 
