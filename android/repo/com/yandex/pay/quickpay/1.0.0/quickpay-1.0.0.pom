@@ -60,7 +60,7 @@
     <dependency>
       <groupId>com.yandex.fintechsdk</groupId>
       <artifactId>core-architecture-api</artifactId>
-      <version>1.8.0</version>
+      <version>1.10.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -96,121 +96,121 @@
     <dependency>
       <groupId>com.yandex.fintechsdk</groupId>
       <artifactId>adapters-login-sdk-impl-3-1-4</artifactId>
-      <version>1.8.0</version>
+      <version>1.10.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.yandex.fintechsdk</groupId>
       <artifactId>adapters-passport-sdk-api</artifactId>
-      <version>1.8.0</version>
+      <version>1.10.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.yandex.fintechsdk</groupId>
       <artifactId>adapters-plus-sdk-api</artifactId>
-      <version>1.8.0</version>
+      <version>1.10.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.yandex.fintechsdk</groupId>
       <artifactId>adapters-yb-sdk-api</artifactId>
-      <version>1.8.0</version>
+      <version>1.10.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.yandex.fintechsdk</groupId>
       <artifactId>core-analytics-impl-external</artifactId>
-      <version>1.8.0</version>
+      <version>1.10.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.yandex.fintechsdk</groupId>
       <artifactId>core-di-impl</artifactId>
-      <version>1.8.0</version>
+      <version>1.10.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.yandex.fintechsdk</groupId>
       <artifactId>core-divkit-impl</artifactId>
-      <version>1.8.0</version>
+      <version>1.10.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.yandex.fintechsdk</groupId>
       <artifactId>core-navigation-impl</artifactId>
-      <version>1.8.0</version>
+      <version>1.10.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.yandex.fintechsdk</groupId>
       <artifactId>core-network-impl</artifactId>
-      <version>1.8.0</version>
+      <version>1.10.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.yandex.fintechsdk</groupId>
       <artifactId>core-security-impl</artifactId>
-      <version>1.8.0</version>
+      <version>1.10.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.yandex.fintechsdk</groupId>
       <artifactId>core-shared-prefs-impl</artifactId>
-      <version>1.8.0</version>
+      <version>1.10.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.yandex.fintechsdk</groupId>
       <artifactId>core-ui-impl</artifactId>
-      <version>1.8.0</version>
+      <version>1.10.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.yandex.fintechsdk</groupId>
       <artifactId>core-utils-impl</artifactId>
-      <version>1.8.0</version>
+      <version>1.10.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.yandex.fintechsdk</groupId>
       <artifactId>data-auth-impl</artifactId>
-      <version>1.8.0</version>
+      <version>1.10.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.yandex.fintechsdk</groupId>
       <artifactId>data-card-api</artifactId>
-      <version>1.8.0</version>
+      <version>1.10.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.yandex.fintechsdk</groupId>
       <artifactId>data-quickpay-api</artifactId>
-      <version>1.8.0</version>
+      <version>1.10.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.yandex.fintechsdk</groupId>
       <artifactId>data-quickpay-impl</artifactId>
-      <version>1.8.0</version>
+      <version>1.10.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.yandex.fintechsdk</groupId>
       <artifactId>features-bdui</artifactId>
-      <version>1.8.0</version>
+      <version>1.10.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.yandex.fintechsdk</groupId>
       <artifactId>features-error</artifactId>
-      <version>1.8.0</version>
+      <version>1.10.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>com.yandex.fintechsdk</groupId>
       <artifactId>resources</artifactId>
-      <version>1.8.0</version>
+      <version>1.10.0</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -647,24 +647,6 @@
     </dependency>
     <dependency>
       <groupId>androidx.lifecycle</groupId>
-      <artifactId>lifecycle-viewmodel-desktop</artifactId>
-      <version>2.9.0</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.lifecycle</groupId>
-      <artifactId>lifecycle-runtime-desktop</artifactId>
-      <version>2.9.0</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.savedstate</groupId>
-      <artifactId>savedstate-desktop</artifactId>
-      <version>1.3.0</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.lifecycle</groupId>
       <artifactId>lifecycle-runtime-ktx-android</artifactId>
       <version>2.9.0</version>
       <scope>runtime</scope>
@@ -702,12 +684,6 @@
     <dependency>
       <groupId>androidx.lifecycle</groupId>
       <artifactId>lifecycle-livedata</artifactId>
-      <version>2.9.0</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>androidx.lifecycle</groupId>
-      <artifactId>lifecycle-viewmodel-savedstate-desktop</artifactId>
       <version>2.9.0</version>
       <scope>runtime</scope>
     </dependency>

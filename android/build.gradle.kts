@@ -53,13 +53,6 @@ android {
     }
 }
 
-configurations.all {
-    exclude(group = "androidx.lifecycle", module = "lifecycle-runtime-desktop")
-    exclude(group = "androidx.lifecycle", module = "lifecycle-viewmodel-desktop")
-    exclude(group = "androidx.lifecycle", module = "lifecycle-viewmodel-savedstate-desktop")
-    exclude(group = "androidx.savedstate", module = "savedstate-desktop")
-}
-
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")

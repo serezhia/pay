@@ -7,5 +7,6 @@ export 'src/models/quick_pay_result.dart';
 export 'src/models/quick_pay_theme_color_scheme.dart';
 export 'src/quick_payment_state_listener.dart';
 export 'src/yandex_quick_pay.dart';
+export 'src/widgets/yandex_active_payment_method_badge.dart';
 export 'src/widgets/yandex_payment_methods_widget.dart';
 

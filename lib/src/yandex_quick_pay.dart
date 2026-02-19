@@ -182,6 +182,26 @@ class YandexQuickPay {
     return result?[ChannelKeys.handled] as bool? ?? false;
   }
 
+  /// Show active payment method in the payment methods widget.
+  ///
+  /// When called, the widget will display the currently active payment method.
+  ///
+  /// Throws [PlatformException] if the SDK is not initialized.
+  Future<void> showActivePaymentMethod() async {
+    await _methodChannel
+        .invokeMethod<void>(MethodNames.showActivePaymentMethod);
+  }
+
+  /// Hide active payment method from the payment methods widget.
+  ///
+  /// When called, the widget will stop displaying the active payment method.
+  ///
+  /// Throws [PlatformException] if the SDK is not initialized.
+  Future<void> hideActivePaymentMethod() async {
+    await _methodChannel
+        .invokeMethod<void>(MethodNames.hideActivePaymentMethod);
+  }
+
   /// Handle an open URL (custom URL scheme) for Quick Pay.
   ///
   /// On iOS, this forwards the URL to the native SDK's `handleOpenURL`.
@@ -237,4 +257,3 @@ class YandexQuickPay {
     _listener = null;
   }
 }
-

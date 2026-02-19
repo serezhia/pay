@@ -93,9 +93,16 @@ internal class QuickPayImpl(
     fun logout() {
         YandexQuickPay.logout()
     }
+
+    fun showActivePaymentMethod() {
+        YandexQuickPay.showActivePaymentMethod()
+    }
+
+    fun hideActivePaymentMethod() {
+        YandexQuickPay.hideActivePaymentMethod()
+    }
 }
 
 internal fun interface EventSender {
     fun sendEvent(event: Map<String, Any?>)
 }
-

@@ -16,6 +16,8 @@ public class YandexQuickPayPlugin: NSObject, FlutterPlugin, FlutterStreamHandler
     static let logout = "logout"
     static let handleUserActivity = "handleUserActivity"
     static let handleOpenURL = "handleOpenURL"
+    static let showActivePaymentMethod = "showActivePaymentMethod"
+    static let hideActivePaymentMethod = "hideActivePaymentMethod"
   }
   
   private enum ChannelKey {
@@ -31,7 +33,7 @@ public class YandexQuickPayPlugin: NSObject, FlutterPlugin, FlutterStreamHandler
     static let url = "url"
     static let handled = "handled"
   }
-  
+
   private enum EventType {
     static let paymentEnabledStateChanged = "paymentEnabledStateChanged"
     static let sessionExpired = "sessionExpired"
@@ -55,6 +57,7 @@ public class YandexQuickPayPlugin: NSObject, FlutterPlugin, FlutterStreamHandler
   }
   
   private static let platformViewType = "yandex_quick_pay/payment_methods"
+  private static let activePaymentMethodBadgeViewType = "yandex_quick_pay/active_payment_method_badge"
   
   // MARK: - Shared Instance (for PlatformView access)
   
@@ -90,6 +93,10 @@ public class YandexQuickPayPlugin: NSObject, FlutterPlugin, FlutterStreamHandler
     // Register PlatformView factory for payment methods widget
     let viewFactory = PaymentMethodsViewFactory(plugin: instance, messenger: registrar.messenger())
     registrar.register(viewFactory, withId: platformViewType)
+    
+    // Register PlatformView factory for active payment method badge
+    let badgeViewFactory = ActivePaymentMethodBadgeViewFactory(plugin: instance, messenger: registrar.messenger())
+    registrar.register(badgeViewFactory, withId: activePaymentMethodBadgeViewType)
   }
   
   // MARK: - Internal access for PlatformView
@@ -120,6 +127,10 @@ public class YandexQuickPayPlugin: NSObject, FlutterPlugin, FlutterStreamHandler
       handleUserActivity(call: call, result: result)
     case MethodName.handleOpenURL:
       handleOpenURL(call: call, result: result)
+    case MethodName.showActivePaymentMethod:
+      handleShowActivePaymentMethod(result: result)
+    case MethodName.hideActivePaymentMethod:
+      handleHideActivePaymentMethod(result: result)
     default:
       result(FlutterMethodNotImplemented)
     }
@@ -177,7 +188,6 @@ public class YandexQuickPayPlugin: NSObject, FlutterPlugin, FlutterStreamHandler
       self?.quickPayHandler = FintechQuickPayHandler(
         config: config,
         stateListener: listener,
-        appMetricaAdapter: QuickPayAppMetricaAdapter(),
         presenterViewController: presenterViewController
       )
 
@@ -391,6 +401,38 @@ public class YandexQuickPayPlugin: NSObject, FlutterPlugin, FlutterStreamHandler
     
     let handled = handler.handleOpenURL(url)
     result([ChannelKey.handled: handled])
+  }
+
+  private func handleShowActivePaymentMethod(result: @escaping FlutterResult) {
+    guard let handler = quickPayHandler else {
+      result(FlutterError(
+        code: ErrorCode.notInitialized,
+        message: "SDK not initialized. Call initialize() first.",
+        details: nil
+      ))
+      return
+    }
+    
+    Task { @MainActor in
+      handler.enableActivePaymentMethodBadge()
+      result(nil)
+    }
+  }
+  
+  private func handleHideActivePaymentMethod(result: @escaping FlutterResult) {
+    guard let handler = quickPayHandler else {
+      result(FlutterError(
+        code: ErrorCode.notInitialized,
+        message: "SDK not initialized. Call initialize() first.",
+        details: nil
+      ))
+      return
+    }
+    
+    Task { @MainActor in
+      handler.disableActivePaymentMethodBadge()
+      result(nil)
+    }
   }
   
   // MARK: - Event Sending

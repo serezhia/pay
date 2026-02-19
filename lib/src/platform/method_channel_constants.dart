@@ -5,6 +5,8 @@ class MethodChannelConstants {
   static const String methodChannelName = 'yandex_quick_pay/methods';
   static const String eventChannelName = 'yandex_quick_pay/events';
   static const String platformViewType = 'yandex_quick_pay/payment_methods';
+  static const String activePaymentMethodBadgeViewType =
+      'yandex_quick_pay/active_payment_method_badge';
 }
 
 /// Method names for the method channel.
@@ -21,6 +23,8 @@ class MethodNames {
   static const String logout = 'logout';
   static const String handleUserActivity = 'handleUserActivity';
   static const String handleOpenURL = 'handleOpenURL';
+  static const String showActivePaymentMethod = 'showActivePaymentMethod';
+  static const String hideActivePaymentMethod = 'hideActivePaymentMethod';
 }
 
 /// Event types for the event channel.

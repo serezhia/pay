@@ -54,6 +54,15 @@ class YandexQuickPayPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, Ev
                 activityProvider = { activity },
             ),
         )
+
+        // Register platform view for active payment method badge
+        flutterPluginBinding.platformViewRegistry.registerViewFactory(
+            ChannelConstants.ACTIVE_PAYMENT_METHOD_BADGE_VIEW_TYPE,
+            ActivePaymentMethodBadgeViewFactory(
+                messenger = flutterPluginBinding.binaryMessenger,
+                activityProvider = { activity },
+            ),
+        )
     }
 
     override fun onDetachedFromEngine(binding: FlutterPlugin.FlutterPluginBinding) {
@@ -105,6 +114,8 @@ class YandexQuickPayPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, Ev
             MethodNames.LOGOUT -> handleLogout(result)
             MethodNames.HANDLE_USER_ACTIVITY -> handleUserActivity(result)
             MethodNames.HANDLE_OPEN_URL -> handleOpenURL(result)
+            MethodNames.SHOW_ACTIVE_PAYMENT_METHOD -> handleShowActivePaymentMethod(result)
+            MethodNames.HIDE_ACTIVE_PAYMENT_METHOD -> handleHideActivePaymentMethod(result)
             else -> result.notImplemented()
         }
     }
@@ -245,6 +256,32 @@ class YandexQuickPayPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, Ev
     private fun handleOpenURL(result: Result) {
         // Not supported on Android, always returns false
         result.success(mapOf(ChannelKeys.HANDLED to false))
+    }
+
+    private fun handleShowActivePaymentMethod(result: Result) {
+        if (!isInitialized) {
+            result.error(ErrorCodes.NOT_INITIALIZED, ERROR_MSG_SDK_NOT_INITIALIZED, null)
+            return
+        }
+        try {
+            quickPayImpl.showActivePaymentMethod()
+            result.success(null)
+        } catch (e: Exception) {
+            result.error(ErrorCodes.SDK_ERROR, e.message ?: ERROR_MSG_UNKNOWN, null)
+        }
+    }
+
+    private fun handleHideActivePaymentMethod(result: Result) {
+        if (!isInitialized) {
+            result.error(ErrorCodes.NOT_INITIALIZED, ERROR_MSG_SDK_NOT_INITIALIZED, null)
+            return
+        }
+        try {
+            quickPayImpl.hideActivePaymentMethod()
+            result.success(null)
+        } catch (e: Exception) {
+            result.error(ErrorCodes.SDK_ERROR, e.message ?: ERROR_MSG_UNKNOWN, null)
+        }
     }
 
     private fun String?.toEnvironment(): QuickPayEnvironment {

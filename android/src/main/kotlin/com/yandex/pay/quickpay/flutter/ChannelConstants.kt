@@ -4,6 +4,7 @@ internal object ChannelConstants {
     const val METHOD_CHANNEL_NAME = "yandex_quick_pay/methods"
     const val EVENT_CHANNEL_NAME = "yandex_quick_pay/events"
     const val PLATFORM_VIEW_TYPE = "yandex_quick_pay/payment_methods"
+    const val ACTIVE_PAYMENT_METHOD_BADGE_VIEW_TYPE = "yandex_quick_pay/active_payment_method_badge"
 }
 
 internal object MethodNames {
@@ -16,6 +17,8 @@ internal object MethodNames {
     const val LOGOUT = "logout"
     const val HANDLE_USER_ACTIVITY = "handleUserActivity"
     const val HANDLE_OPEN_URL = "handleOpenURL"
+    const val SHOW_ACTIVE_PAYMENT_METHOD = "showActivePaymentMethod"
+    const val HIDE_ACTIVE_PAYMENT_METHOD = "hideActivePaymentMethod"
 }
 
 internal object EventTypes {
